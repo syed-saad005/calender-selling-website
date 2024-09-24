@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Calendar Craft Co.</title>
+  
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="icon" href="WhatsApp_Image_2024-08-25_at_07.23.53_e0387999-removebg-preview.png">
+    </head>
+    <style>
+    
+    
+    .dropdown-menu {
+            display: none; 
+            border-radius: 20px;
+            padding: 65px;
+            padding-top: -300px;
+            position: absolute; 
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+            z-index: 1; 
+        }
+      
+
+        .nav-item:hover .dropdown-menu {
+            display: flex;
+        }
+
+        .dropdown-menu .dropdown-item {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            color: rgb(255, 120, 9); 
+            transition: 0.3s;
+            text-decoration: underline;
+            opacity: 1;
+            
+        }
+
+
+        .dropdown-menu .dropdown-header {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: rgb(189, 96, 53);
+            padding: 10px;
+        }
+        
+    .a{
+
+padding: 20px;
+} 
+.dropdown-menu-custom {
+border-radius: 20px;
+padding: 10px;
+}
+.dropdown-item-custom:hover {
+background-color: #e95916;
+color: black;
+}
+.nav-link:hover {
+border-bottom: -20px solid #e95916;
+
+}
+.t{
+
+right: 0px;
+position: relative;
+left: 80px;
+top: -70px;
+}
+.cv{
+
+
+position: relative;
+left: -70px;
+
+top: -206px;
+}
+.tv{
+
+position: relative;
+left: 80px;
+top: -70px;
+}
+.s { height: 400px; border-radius: 30px;
+}
+.logo { 
+margin-left: 10px;
+}
+.n { 
+padding: 20px; margin-left: 100px;
+}
+.hn { 
+text-align: center; color: #f86714; margin-top: 20px;
+}
+.dropdown-menu.show {
+display: flex;
+}
+.dropdown-menu { 
+border-radius: 20px; padding: 5px; 
+}
+.dropdown-menu ul { 
+list-style: none; padding: 0; }
+.dropdown-menu li a { color: gray;
+}
+.dropdown-menu li:first-child a { font-weight: bold; font-size: 1.2em; color: #e95916; }
+.nav-link { position: relative; }
+.nav-link::after { transition: all 0.2s; }
+.nav-link:hover { border-bottom:rgb(255, 255, 255); }
+.nav-link:hover::after { content: ''; height: 2px; width: 100%; position: absolute; background-color: rgb(255, 145, 0); bottom: 0; left: 0; }
+.nav { background-color: #ffffff !important; }
+.carousel { width: 90%; margin: 0% auto; border: 2px solid rgb(255, 255, 255); border-radius: 30px; }
+.hp { text-align: center; color: #f86714; }
+.t { text-align: center; }
+.te { text-align: center; }
+.b2 { margin-left: 120px; }
+.hd { text-align: center; color: #f86714; margin-top: 20px; }
+.hc { text-align: center; }
+.ca { background-position: center; display: inline-block; }
+.v { vertical-align: unset; }
+
+
+.container{
+
+    border: 2px solid black;
+    height: 400px;
+    width: 1200px;
+    border-radius: 30px;
+    margin-top: 70px;
+    background-repeat: no-repeat;
+    ;
+}
+.box{
+
+    color: #f86714;
+    margin-left: 850px;
+    font-size: xx-large;
+    margin-top: 80PX;
+}
+.h6{
+
+    margin-left: 800px;
+}
+.box1{
+
+    
+    margin-left: 740px;
+    height: 500px;
+    width: 450px;
+    padding: 20px;
+}
+.input{
+
+    border: 2px solid #f86714;
+    border-radius: 10px;
+    width: 105%;
+    height: 40px;
+    margin-left: -10px;
+}
+.input1{
+
+border: 2px solid #f86714;
+border-radius: 10px;
+width: 50%;
+height: 40px;
+margin-left: -10px;
+margin-top: 30px;
+position: relative;
+}
+.input2{
+
+border: 2px solid #f86714;
+border-radius: 10px;
+width: 50%;
+height: 40px;
+left: 17px;
+position: relative;
+top: 0px;
+}
+.input3{
+
+border: 2px solid #f86714;
+border-radius: 10px;
+width: 105%;
+height: 80px;
+margin-left: -10px;
+margin-top: 30px;
+}
+.input4{
+
+border: 2px solid #f86714;
+border-radius: 10px;
+width: 105%;
+height: 150px;
+margin-left: -10px;
+margin-top: 30px;
+;
+}
+.vv{
+
+    margin-top: 30px;
+    margin-left: 130px;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #f9f9f9;
+    border: 2px solid #e95916;
+}
+.vv:hover{
+    
+    color: #f9f9f9;
+    background-color: #e95916;
+    transition: 0.5s;
+    border: none;
+
+}
+.boxx{
+        margin-left: 70px;
+        width: 90% ;
+        height: 400px;
+        border-radius: 30px; 
+    }
+
+    .box2{
+
+        width: 600px;
+        height: 600px;
+        margin-top: -580px;
+        margin-left: 30px;
+    }
+    
+    .box3{
+
+        color: #e95916;
+        margin-top: 10px;
+        width: 580px;
+        height: 200px;
+        text-align: center;
+    }
+    .et{
+
+        color: rgb(134, 134, 134);
+        
+    }
+    .box4{
+
+        height: 100px;
+        width: 550px;
+        margin-left: 20px;
+    }
+    .mk{
+
+        margin-left: 80px;
+        color:  rgb(172, 172, 172) ;
+    }
+    .mj{
+
+        margin-top: 0px;
+        margin-left: 80px;
+    }
+    body{
+
+        font-style: oblique;
+    }
+    .mm{
+
+        
+        margin-top: 0px;
+        margin-left: 80px;
+    }
+    .box5{
+
+        height: 100px;
+        width: 550px;
+        margin-left: 20px;
+        margin-top: 20px;
+}
+    .pti{
+
+        margin-left: 80px;
+        color:  rgb(172, 172, 172) ;
+    }
+    .box6{
+
+    height: 100px;
+    width: 550px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.em{
+
+margin-left: 80px;
+color:  rgb(172, 172, 172) ;
+}
+.er{
+
+        
+margin-top: 0px;
+margin-left: 80px;
+}
+
+
+        
+        .navbar-nav .nav-link .active  {
+           
+            border-bottom: 2px solid #f86714;
+            
+            
+            
+        
+        }
+        .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #f86714;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    border-bottom: -70px;
+}
+        
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.container{
+	width: 1170px;
+	margin:auto;
+    border: 0px solid #4b505c;
+    margin-top: 20px;
+    height: 200px;
+
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	
+    padding: 70px 0;
+    background-color: #4b505c;
+    margin-top: 30px;
+    
+    
+}
+.footer-col{
+   width: 25%;
+   padding: 0 70px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e95916;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #fcfcfc;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #e95916;
+	padding-left: 8px;
+}
+
+
+.nav-item{
+
+padding: 20px;
+text-align: end;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+          
+            .boxx{
+
+                margin-left: 20px;
+            }
+            .footer-col {
+                width: 100%;
+                margin: 10px 0;
+                
+                
+            }
+            .footer{
+
+                height: 1000px;
+            }
+
+            .box3{
+
+                width: 500px;
+                position: relative;
+                top: -200px;
+            }
+            #contactlocation{
+
+                position: relative;
+                left: -95px;
+                width: 520px;
+
+            }
+            .box4{
+
+                margin-top: -50px;
+            }
+
+            body{
+
+                overflow-x: hidden;
+            }
+            }
+
+</style>
+    <body>
+
+        <div class="container1">
+       
+    <div>
+        <nav class="navbar navbar-expand-sm navbar-light bg-warning nav">
+            <a class="navbar-brand"><img src="WhatsApp_Image_2024-08-25_at_07.23.53_e0387999-removebg-preview.png" class="logo" alt="" width="120px"></a>
+            <h3>Calendar Craft Co.</h3>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+            <div class="collapse navbar-collapse n" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html" aria-current="page" style="padding: 10px;">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 10px !important;">Items</a>
+                       <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Calendars</a></li>
+                                <li><a class="dropdown-item" href="wall calendars.html">Wall Calendars</a></li>
+                                <li><a class="dropdown-item" href="desk calendars.html">Desk Calendars</a></li>
+                            </ul>
+                            <ul>
+                                <li><a class="dropdown-item" href="">Diaries</a></li>
+                                <li><a class="dropdown-item" href="daily diaries.html">Daily Planner</a></li>
+                                <li><a class="dropdown-item" href="monthly diaries.html">Monthly Planner</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact us.html" style="padding: 10px;">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about us.html" style="padding: 10px;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="checkout.html" style="padding: 10px;">Checkout</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+
+        <div class="boxx"><img src="hot-line-contact-us-call-center-search-interface.jpg" style="height: 400px; border-radius: 30px; width: 100%;" alt=""></div>
+
+
+        <div class="box">Leave A Comment</div>
+        <br>
+        <h6 class="h6">Leave A Comment Our Team Will Reply So Soon.</h6>
+        <div class="box1">
+
+            <input type="text"   id="Username"  placeholder="     Your Name*" class="input">
+            <input type="email"  id="Username"  placeholder="     Your Email*" class="input1">
+            <input type="number" id="Username"  placeholder="     Your Number*" class="input2">
+            <input type="text"   id="Username"  placeholder="     Your Title*" class="input3">
+            <input type="text"   id="Username"  placeholder="     Your Content*" class="input4">
+            <button class="vv">Send Message</button>
+        </div>
+        <div class="box2"> 
+
+            <div class="box3">
+
+                <h2>Contact us</h2>
+                <br>
+                
+                <h5 class="et">We’re excited to hear from you! Whether you have a question about our products or services, need support, or just want to share your thoughts with us, we're here to help. Please use the contact information below to get in touch with us.</h5>
+            </div>
+
+            <div class="box4" id="contactaddress">
+                <h5 class="mk">Address:</h5>
+                <h4 class="mj">Latifabad Unit No:8<br>
+                    near Puma Petrolpump,Hyderabad
+                </h4>
+            </div>
+            
+            <div class="box5" id="contactnumber">
+                <h5 class="pti">Contact Number:</h5>
+                <h4 class="mm">0304-3679767<br>
+                    
+                </h4>
+            </div>
+
+            
+            <div class="box6" id="emailee">
+                <h5 class="em">Email:</h5>
+                <h4 class="er">calendarcraftCo656@gmail.com<br>
+                
+                </h4>
+            </div>
+
+        </div>  
+        <iframe id="contactlocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115356.65716714996!2d68.2247188219746!3d25.37481732658171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c70627aa05ad7%3A0x620c3f1e4c9721ba!2sAptech%20Computer%20Education%20Latifabad!5e0!3m2!1sen!2s!4v1725548078812!5m2!1sen!2s" width="1000" height="400"  style="border:0; margin-left: 100px; border-radius: 20px;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                <ul>
+                    <li><a href="about us.html">About us</a></li>
+                    <li><a href="about us.html#aboutusservices">Our Services</a></li>
+                    <li><a href="about us.html#aboutusterms">Privacy Policy</a></li>
+                    <li><a href="about us.html#aboutusterms">Terms Condition</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="contact us.html#emailee">Email</a></li>
+                    <li><a href="contact us.html#contactnumber">Contact Number</a></li>
+                    <li><a href="contact us.html#contactaddress">Address</a></li>
+                    <li><a href="contact us.html#contactlocation">Location</a></li>
+                </ul>
+            </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="wall calendars.html">Wall Calendars</a></li>
+                            <li><a href="desk calendars.html">Desk Calendars</a></li>
+                            <li><a href="daily diaries.html">Daily Planner</a></li>
+                            <li><a href="monthly diaries.html">Monthly Planner</a></li>                           
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Explore Our Site</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about us.html">About Us</a></li>
+                            <li><a href="contact us.html">Contact Us</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+       </footer>
+    
+     
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+
+        </div>
+      </body>
+    </html>

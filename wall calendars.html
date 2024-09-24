@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Calendar Craft Co.</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="icon" href="WhatsApp_Image_2024-08-25_at_07.23.53_e0387999-removebg-preview.png">
+    </head>
+    
+    <style>
+        
+        .dropdown-menu {
+            display: none; 
+            border-radius: 20px;
+            padding: 65px;
+            padding-top: -300px;
+            position: absolute; 
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+            z-index: 1; 
+        }
+      
+
+        .nav-item:hover .dropdown-menu {
+            display: flex;
+        }
+
+        .dropdown-menu .dropdown-item {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            color: rgb(255, 120, 9); 
+            transition: 0.3s;
+            text-decoration: underline;
+            opacity: 1;
+            
+        }
+
+
+        .dropdown-menu .dropdown-header {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: rgb(189, 96, 53);
+            padding: 10px;
+        }
+        
+    .a{
+
+padding: 20px;
+} 
+.dropdown-menu-custom {
+border-radius: 20px;
+padding: 10px;
+background-color: #f9f9f9;
+}
+.dropdown-item-custom:hover {
+background-color: #e95916;
+color: black;
+}
+.nav-link:hover {
+border-bottom: 2px solid rgb(223, 194, 159);
+
+}
+.t{
+
+right: 0px;
+position: relative;
+left: 80px;
+top: -70px;
+}
+.cv{
+
+
+position: relative;
+left: -70px;
+
+top: -206px;
+}
+.tv{
+
+position: relative;
+left: 80px;
+top: -70px;
+}
+.s { height: 400px; border-radius: 30px;
+}
+.logo { 
+margin-left: 10px;
+}
+.n { 
+padding: 20px; margin-left: 100px;
+}
+.hn { 
+text-align: center; color: #f86714; margin-top: 20px;
+}
+.dropdown-menu.show {
+display: flex;
+}
+.dropdown-menu { 
+border-radius: 20px; padding: 5px; 
+}
+.dropdown-menu ul { 
+list-style: none; padding: 0; }
+.dropdown-menu li a { color: gray;
+}
+.dropdown-menu li:first-child a { font-weight: bold; font-size: 1.2em; color: rgb(255, 104, 3); }
+.nav-link { position: relative; }
+.nav-link::after { transition: all 0.2s; }
+.nav-link:hover { border-bottom:rgb(255, 255, 255); }
+.nav-link:hover::after { content: ''; height: 2px; width: 100%; position: absolute; background-color: rgb(255, 145, 0); bottom: 0; left: 0; }
+.nav { background-color: #ffffff !important; }
+.carousel { width: 90%; margin: 0% auto; border: 2px solid rgb(255, 255, 255); border-radius: 30px; }
+.hp { text-align: center; color: #f86714; }
+.t { text-align: center; }
+.te { text-align: center; }
+.b2 { margin-left: 120px; }
+.hd { text-align: center; color: #f86714; margin-top: 20px; }
+.hc { text-align: center; }
+.ca { background-position: center; display: inline-block; }
+.v { vertical-align: unset; }
+
+body{
+
+font-style: oblique;
+}
+    .boxb {
+        position: relative; 
+        overflow: hidden;  
+        width: 1255px;
+        height: 980px;
+        margin-left: 50px;
+        box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset;
+    }
+
+    .boxb::before {
+        content: ""; 
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover ;
+        background-position: center; 
+        opacity: 0.8;
+        z-index: -1; 
+        pointer-events: none; 
+    }
+    
+   
+    .ca {
+        width: 250px;
+        height: 400px;
+        margin-left: 55px;
+        margin-top: 30px;
+        border-radius: 7px;
+        background-color: rgba(255, 153, 0, 0.5);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .boxx{
+        margin-left: 70px;
+        width: 90% ;
+        height: 400px;
+        border-radius: 30px; 
+    }
+
+    .box{
+
+width: 228px;
+height: 600px;
+margin-top: -1003px;
+font-size: x-large;
+color: #ff6016;
+position: relative;
+margin-left: 35px;
+}
+.h{
+color: rgb(147, 147, 147) ;
+text-decoration :none;
+position: absolute;
+font-size: large;
+left: -0px;
+list-style-type: none;
+top: -5px;
+}
+.t{
+color: rgb(147, 147, 147) ;
+text-decoration :none;
+font-size: large;
+left: 0px;
+top: -14px;
+
+}
+.m{
+color: rgb(147, 147, 147) ;
+text-decoration :none;
+font-size: large;
+position: absolute;
+left: -0px;
+top: -8px; 
+
+
+
+}
+.d{
+
+background-image: url(arrow.jpg);
+background-position: 185px;
+margin-top: -155px;
+width: 200px;
+height: 20px;
+background-repeat: no-repeat;
+position: absolute;
+list-style-type: none;
+}
+.arr{
+
+background-image: url(arrow.jpg);
+background-position: 185px;
+width: 200px;
+height: 20px;
+background-repeat: no-repeat;
+margin-top: 50px;
+position: absolute;
+list-style-type: none;
+
+
+}
+.arro{
+
+background-image: url(arrow.jpg);
+background-position: 185px;
+width: 200px;
+height: 20px;
+background-repeat: no-repeat;
+margin-top: 40px;
+position: absolute;
+list-style-type: none;
+
+
+}
+
+.ac{
+
+border: 1px solid rgb(177, 177, 177);
+width: 200px;
+margin-top: 60px;
+}
+.acc{
+
+border: 1px solid rgb(177, 177, 177);
+width: 200px;
+margin-top: 70px;
+}
+.as{
+
+border: 1px solid rgb(177, 177, 177);
+width: 200px;
+margin-top :60px;
+}
+.acd{
+
+border: 1px solid rgb(177, 177, 177);
+width: 200px;
+margin-top: 70px;
+}
+.b{
+
+background-image: url(arrow.jpg);
+background-position: 185px;
+margin-top: -20px;
+width: 200px;
+height: 20px;
+background-repeat: no-repeat;
+position: absolute;
+list-style-type: none;
+}
+.bd{
+
+background-image: url(arrow.jpg);
+background-position: 185px;
+margin-top: -20px;
+width: 200px;
+height: 20px;
+background-repeat: no-repeat;
+position: absolute;
+list-style-type: none;
+}
+.ad{
+
+border: 1px solid rgb(177, 177, 177);
+width: 200px;
+margin-top: 70px;
+}
+.navbar-nav .nav-link .active  {
+           
+           border-bottom: 2px solid #f86714;
+           
+           
+           
+       
+       }
+       .nav-link.active::after {
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 3px;
+   width: 100%;
+   background-color: #f86714;
+   transform: scaleX(1);
+   transform-origin: bottom left;
+   border-bottom: -70px;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	width: 1170px;
+	margin:auto;
+    border: 0px solid #4b505c;
+    margin-top: 20px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	
+    padding: 70px 0;
+    background-color: #4b505c;
+    margin-top: 500px;
+    
+    
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e95916;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #fcfcfc;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #e95916;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color:#e95916;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #e95916;
+}
+
+.icon-container {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease; 
+    overflow: hidden;
+  
+
+    
+
+}
+
+.icon {
+    display: block; 
+    width: 50px; 
+    height: auto; 
+    transition: transform 0.3s ease, filter 0.3s ease; 
+    cursor: pointer; 
+    display: inline-block;
+    
+
+}
+
+.icon-container:hover .icon {
+    transform: scale(1.2) rotate(360deg);
+    filter: brightness(1.2); 
+    overflow: visible;
+    
+
+}
+.as :hover{
+
+color: #000000;
+transition: 0.5s;
+text-decoration: underline #e95916;
+
+}
+.ac :hover{
+
+color: #000000;
+transition: 0.5s;
+text-decoration: underline #e95916;
+
+}
+.acc :hover{
+
+color: #000000;
+transition: 0.5s;
+text-decoration: underline #e95916;
+
+}
+.acd :hover{
+
+color: #000000;
+transition: 0.5s;
+text-decoration: underline #e95916;
+
+}
+.ad :hover{
+
+color: #000000;
+transition: 0.5s;
+text-decoration: underline #e95916;
+
+}
+.nav-item{
+
+padding: 20px;
+text-align: end;
+}
+@media (max-width: 1024px) {
+            .navbar-nav {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .nav-link {
+                padding: 8px 15px;
+            }
+
+            .footer-col {
+                width: 30%;
+                margin: 10px;
+            }
+
+            .icon-container {
+                max-width: 300px;
+                left: -40px;
+                position: relative;
+            }
+            .icon-containerb {
+                max-width: 250px;
+                left: -120px;
+                position: relative;
+            }
+
+
+            .icons img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .box{
+
+                 display: none;
+
+            }
+           
+            .boxb{
+                max-width: 700px;
+                position: relative;
+                left: -260px;
+                height: 2000px;
+                
+                box-shadow: none;
+           }
+           .boxx{
+
+            margin-left: 20px;
+           }
+           body{
+            height: 400px;
+            overflow-x: hidden;
+           }
+           
+.hn{
+
+    margin-left: -600px;
+}
+
+            .nav-link {
+                padding: 8px;
+            }
+
+            .icon-container {
+                max-width: 220px;
+                
+            }
+            .bb {
+                max-width: 220px;
+                position: relative;
+                left: -100px;
+                display: inline-block;
+                
+            }
+            .cc {
+                position: relative;
+               left: -145px;
+                max-width: 220px;
+                display: inline-block;
+            }
+            .aa {
+                max-width: 220px;
+                position: relative;
+               left: -145px;
+                display: inline-block;
+            }
+            .footer-container{
+
+                margin-top: -300px;
+            }
+
+
+            .card-img{
+
+                max-width: 220px;
+            }
+            .card-imagg{
+
+                max-width: 220px;
+            }
+
+
+            .icon {
+                width: 10px;
+                height: 10px;
+            }
+
+            .footer-col {
+                width: 100%;
+                margin: 10px 0;
+                
+            }
+        }
+
+        @media (max-width: 480px) {
+            .navbar-nav {
+                padding: 0;
+                margin: 0;
+            }
+
+            .nav-link {
+                padding: 5px;
+                font-size: 14px;
+            }
+
+            .boxx img {
+                max-width: 100%;
+            }
+
+            .icon-container {
+                max-width: 180px;
+            }
+
+            .icons img {
+                width: 18px;
+                height: 18px;
+            }
+            .box{
+                display: none;
+            }
+
+            .footer-col h4 {
+                font-size: 16px;
+            }
+            .boxb{
+
+                
+                width: 480px;
+            }
+            .box{
+                display: none;
+            }
+        }
+    </style>
+    <body>
+        
+    <div>
+        <nav class="navbar navbar-expand-sm navbar-light bg-warning nav">
+            <a class="navbar-brand"><img src="WhatsApp_Image_2024-08-25_at_07.23.53_e0387999-removebg-preview.png" class="logo" alt="" width="120px"></a>
+            <h3>Calendar Craft Co.</h3>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+            <div class="collapse navbar-collapse n" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html" aria-current="page" style="padding: 10px;">Home <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown active" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 10px !important;">Items</a>
+                       <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Calendars</a></li>
+                                <li><a class="dropdown-item" href="wall calendars.html">Wall Calendars</a></li>
+                                <li><a class="dropdown-item" href="desk calendars.html">Desk Calendars</a></li>
+                            </ul>
+                            <ul>
+                                <li><a class="dropdown-item" href="">Diaries</a></li>
+                                <li><a class="dropdown-item" href="daily diaries.html">Daily Planner</a></li>
+                                <li><a class="dropdown-item" href="monthly diaries.html">Monthly Planner</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html" style="padding: 10px;">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about us.html" style="padding: 10px;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="checkout.html" style="padding: 10px;">Checkout</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+        <div class="boxx"><img src="z.jpg" style="height: 400px; border-radius: 30px; width: 100%;" alt=""></div>
+       
+            <section class="container mt-5">
+                <h2 class="text-center mb-4 hn">"Discover Your Ideal Wall Calendar"</h2>
+            </section>
+
+
+            <div class="boxb" style="width: 1076px; height: 990px;margin-left: 270px;  box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset;">
+
+                 <div class="icon-container" style="width: 250px; height: 400px;margin-left: 50px; margin-top: 30px; border-radius: 7px; background-color:  rgba(255, 153, 0, 0.5); box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
+                    <img src="WhatsApp Image 2024-08-18 at 12.23.04_1bb8a5dd.jpg" style="width: 250px; height: 350px ;">
+                   
+                 <a href="checkout.html"><img src="shopping-cart.png" style="width: 35px; height: 35px; margin-left: 35px; margin-top: 8px; vertical-align: unset;"  class="icon"></a>
+                 <a href="checkout.html"><img src="shopping-bag.png" alt="" style="width: 33px; height: 33px; margin-left: 33px; margin-bottom: 30px;"  class="icon"></a>
+                 <a href="checkout.html"><img src="information-button.png" alt="" style="width: 28px; height: 28px; margin-bottom: 28px; margin-left: 40px;"  class="icon"></a>
+                </div>
+                 
+                <div class="icon-container aa" style="width: 250px; height: 400px;margin-left: 110px; margin-top: 30px; border-radius: 7px; background-color:  rgba(255, 153, 0, 0.5); box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
+                    <img src="9957022.jpg" style="width: 250px; height: 350px ; ">
+                
+                    <a href="checkout.html"><img src="shopping-cart.png" style="width: 35px; height: 35px; margin-left: 35px; margin-top: 8px; vertical-align: unset;"  class="icon"></a>
+                    <a href="checkout.html"><img src="shopping-bag.png" alt="" style="width: 33px; height: 33px; margin-left: 33px; margin-bottom: 30px;"  class="icon"></a>
+                    <a href="checkout.html"><img src="information-button.png" alt="" style="width: 28px; height: 28px; margin-bottom: 28px; margin-left: 40px;"  class="icon"></a>
+                </div>
+
+                <div class="icon-container bb" style="width: 250px; height: 400px;margin-left: 113px; margin-top: 30px; border-radius: 7px; background-color:  rgba(255, 153, 0, 0.5); box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
+                <img src="SL-051623-57680-40.jpg" style="width: 250px; height: 350px ;">
+                
+                <a href="checkout.html"><img src="shopping-cart.png" style="width: 35px; height: 35px; margin-left: 35px; margin-top: 8px; vertical-align: unset;"  class="icon"></a>
+                <a href="checkout.html"><img src="shopping-bag.png" alt="" style="width: 33px; height: 33px; margin-left: 33px; margin-bottom: 30px;"  class="icon"></a>
+                <a href="checkout.html"><img src="information-button.png" alt="" style="width: 28px; height: 28px; margin-bottom: 28px; margin-left: 40px;"  class="icon"></a>
+                </div>
+                
+            
+                <div class="icon-container cc" style="width: 250px; height: 400px;margin-left: 50px; margin-top: 100px; border-radius: 7px; background-color:  rgba(255, 153, 0, 0.5); box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
+                <img src="SL-051623-57780-72.jpg" style="width: 250px; height: 350px ;">
+                
+                <a href="checkout.html"><img src="shopping-cart.png" style="width: 35px; height: 35px; margin-left: 35px; margin-top: 8px; vertical-align: unset;"  class="icon"></a>
+                <a href="checkout.html"><img src="shopping-bag.png" alt="" style="width: 33px; height: 33px; margin-left: 33px; margin-bottom: 30px;"  class="icon"></a>
+                <a href="checkout.html"><img src="information-button.png" alt="" style="width: 28px; height: 28px; margin-bottom: 28px; margin-left: 40px;"  class="icon"></a>
+                </div>
+
+                <div class="icon-container" style="width: 250px; height: 400px;margin-left: 110px; margin-top: 100px; border-radius: 7px; background-color:  rgba(255, 153, 0, 0.5); box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
+                    <img src="wall-calendar-2025-template-set-of-12-months-vector-41141877.jpg" style="width: 250px; height: 350px ;">
+                    <a href="checkout.html"><img src="shopping-cart.png" style="width: 35px; height: 35px; margin-left: 35px; margin-top: 8px; vertical-align: unset;"  class="icon"></a>
+                    <a href="checkout.html"><img src="shopping-bag.png" alt="" style="width: 33px; height: 33px; margin-left: 33px; margin-bottom: 30px;"  class="icon"></a>
+                    <a href="checkout.html"><img src="information-button.png" alt="" style="width: 28px; height: 28px; margin-bottom: 28px; margin-left: 40px;"  class="icon"></a>
+                </div>
+
+                <div class="icon-container" style="width: 250px; height: 400px;margin-left: 113px; margin-top: 100px; border-radius: 7px; background-color:  rgba(255, 153, 0, 0.5); box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
+                    <img src="3.jpg" style="width: 250px; height: 350px ;   ">
+                    <a href="checkout.html"><img src="shopping-cart.png" style="width: 35px; height: 35px; margin-left: 35px; margin-top: 8px; vertical-align: unset;"  class="icon"></a>
+                    <a href="checkout.html"><img src="shopping-bag.png" alt="" style="width: 33px; height: 33px; margin-left: 33px; margin-bottom: 30px;"  class="icon"></a>
+                    <a href="checkout.html"><img src="information-button.png" alt="" style="width: 28px; height: 28px; margin-bottom: 28px; margin-left: 40px;"  class="icon"></a>
+                </div>
+    
+              </div>
+
+              <div class="box">
+                <h3 style="margin-right:17px;">Related Prodcuts</h3>
+                
+                    <div class="as"> <li class="arro"><a href="wall calendars.html" class="h">Desk Calendars</a></li> </div>
+                   <div class="ac">  <li class="arr"><a href="desk calendars.html" class="t">Daily Planner</a></liv></div>
+                   <div class="acc"><li class="d"><a href="wall calendars.html" class="m">Wall Calendars</a></li></div>
+                   <div class="acd"><li class="b"><a href="daily diaries.html" class="m">Monthly Planner</a></li></div>
+                   <div class="ad"><li class="bd"><a href="daily diaries.html" class="m">Top Products</a></li></div>
+                  </div>
+
+              
+
+                  <footer class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-col">
+                                <h4>Company</h4>
+                <ul>
+                    <li><a href="about us.html">About us</a></li>
+                    <li><a href="about us.html#aboutusservices">Our Services</a></li>
+                    <li><a href="about us.html#aboutusterms">Privacy Policy</a></li>
+                    <li><a href="about us.html#aboutusterms">Terms Condition</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="contact us.html#emailee">Email</a></li>
+                    <li><a href="contact us.html#contactnumber">Contact Number</a></li>
+                    <li><a href="contact us.html#contactaddress">Address</a></li>
+                    <li><a href="contact us.html#contactlocation">Location</a></li>
+                </ul>
+            </div>
+                            <div class="footer-col">
+                                <h4>online shop</h4>
+                                <ul>
+                                    <li><a href="wall calendars.html">Wall Calendars</a></li>
+                                    <li><a href="desk calendars.html">Desk Calendars</a></li>
+                                    <li><a href="daily diaries.html">Daily Planner</a></li>
+                                    <li><a href="monthly diaries.html">Monthly Planner</a></li>                                   
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>Explore Our Site</h4>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about us.html">About Us</a></li>
+                                    <li><a href="contact us.html">Contact Us</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+               </footer>
+            
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        </body>
+        </html>
